@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tech-nology</title>
+    <link href="img/icon.png" rel="shortcut icon" >
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/Validacion.js"></script>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+  
+    <!--Link hacia los iconos-->
+    <link href="https://use.fontawesome.com/5e22f11e35.css" media="all" rel="stylesheet">
+  
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-png">
+              <img src="img/icon.png" style="width: 70px; height: 55.47px;">
+            </span>
+          </button>
+    
+      <!---Icono de logo-->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icon.png" style="width:70px">
+          </a>
+    
+      <!---Opciones de navegación e iconos por sección-->    
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio<span class="sr-only">(current)</span></a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">Noticias</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="who-r-we.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeria_fotos.html">Galería de fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactenos.html">Contáctenos</a>
+              </li>
+              <div class="ini-se">
+                <li class="nav-item">
+                  <a class="nav-link active" href="ini-se.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="registro.html">Registrarse</a>
+                </li>   
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="container-inside">
+          <form action="index.html" method="post" name="datos" onsubmit="return validacion()">
+            <!--<form role="form" method="post" action="index.html" onsubmit="return validacion()">-->
+              <div class="form-group-1"> 
+                <label for="nombre">Nombre: *</label>
+                <input type="text" name="nom" class="form-control" id="nombre" placeholder="Digite su nombre" autofocus>
+              </div> 
+              <div class="form-group"> 
+                <label for="email">Email: *</label>
+                <input type="email" name="em" class="form-control" id="email" placeholder="Digite su email">
+                <!--<label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Digite su email">-->
+                <!--<p>
+                  Email:
+                  <input id="email">
+                  <span id="emailOK"></span>
+              </p>-->
+              </div> 
+    
+              <div class="form-group">
+                <label for="Teléfono">Número Telefónico *</label>
+                <br>
+                <input type="text" name="fono" id="telefono" class="form-control" placeholder="Digite su teléfono">
+              </div>
+
+              <div class="form-group">
+                <label for="opcion">Asunto *</label>
+                <br>
+                <select id="opciones" name="opcion">
+                    <option value="">- Selecciona una opción -</option>
+                    <option value="1">Contacto General</option>
+                    <option value="2">Publicidad</option>
+                    <option value="3">Reportar un Bug</option>
+                    <option value="4">Otro</option>
+                  </select>
+              </div>
+    
+              <div class="form-group"> 
+                <label for="comentarios">Mensaje: *</label>
+                <textarea type="text" class="form-control" rows="5" id="comentarios" name="men"></textarea>
+              </div>
+        
+              <div class="buttom-enviar">
+                    <button type="submit" class="btn btn-danger" value="Enviar Datos">Enviar</button> 
+              </div>
+    
+            </form>
+        </div>
+    
+      </div> 
+
+
+
+    <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Juan Álvarez, Pablo Ortiz y Daniel Retamal @Copyrigth Derechos reservados.</p>
+    </div>
+    <div class="container" style="text-align: center;">
+      <h3 class="footer__title" >Síguenos</h3>
+      <div class="footer__social-networks">
+        <a class="a-social-networks" href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>		
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+      </div>
+  </div>
+    
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

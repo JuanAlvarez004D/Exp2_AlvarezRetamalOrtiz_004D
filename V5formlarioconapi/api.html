@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech-nology</title>
+    <link href="img/icon.png" rel="shortcut icon" >
+    <link rel="stylesheet" href="css/styles.css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#mostrar").click(function(){
+
+                $.get("https://api.coingecko.com/api/v3/exchange_rates",
+                    function(data){
+                        
+                        $.each(data.rates,function(i,item){
+                            $("#bitcoin").append("<tr><td>"+item.name+"</td><td>"+item.unit+"</td><td>"+item.value+"</td><td>"+item.type+"</td></tr>");
+                            
+
+                        });
+
+                    });
+            });
+        })
+
+    </script>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+  
+    <!--Link hacia los iconos-->
+    <link href="https://use.fontawesome.com/5e22f11e35.css" media="all" rel="stylesheet">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-png">
+              <img src="img/icon.png" style="width: 70px; height: 55.47px;">
+            </span>
+          </button>
+    
+      <!---Icono de logo-->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icon.png" style="width:70px">
+          </a>
+    
+      <!---Opciones de navegación e iconos por sección-->    
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio<span class="sr-only">(current)</span></a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="api.html">Bitcoin</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">Noticias</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="who-r-we.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeria_fotos.html">Galería de fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactenos.html">Contáctenos</a>
+              </li>
+              <div class="ini-se">
+                <li class="nav-item">
+                  <a class="nav-link active" href="ini-se.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="registro.html">Registrarse</a>
+                </li>   
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <br>
+  <div class="container">
+    <h1 class="tittle">¿Qué es el Bitcoin?</h1>
+    <img src="img/bitcoin.jpg" class="bit">
+    <p style="text-align: justify;"> Bitcoin es una moneda virtual o un medio de intercambio electrónico 
+    que sirve para adquirir productos y servicios como cualquier otra moneda.
+    Pero esta moneda es descentralizada, es decir que no existe una autoridad o ente
+    de control que sea responsable de su emisión y registro de sus movimientos.</p>
+    <p style="text-align: justify;">Fue concebida en 20087​ por una entidad conocida bajo el seudónimo de Satoshi Nakamoto, cuya identidad
+    concreta se desconoce. Satoshi trabajó en el código fuente de la aplicación de referencia junto a otros 
+    desarrolladores voluntarios​ hasta diciembre de 2010, momento en el que decidió concluir su actividad pública.
+    Su unidad de cuenta tradicional se denomina bitcóin (en plural bitcoines) y se clasifica como moneda digital. 
+    Sirve para contabilizar y transferir valor,​ y cada bitcóin se compone de 100 millones de satoshis, que es la unidad de cuenta mínima.</p>
+  </div>
+  <hr>
+  <div class="container">
+    <h1 class="tittle">¿Como funciona el bitcoin?</h1>
+    <img src="img/bitocin2.jpg" class="bit">
+    <p style="text-align: justify;">Para poder hacer un intercambio, cada usuario debe tener una clave criptográfica y el sistema permite descontar
+    la cantidad de bitcoin a quien compra y aumentar la cantidad de bitcoin de la cuenta de quien vende.
+    No tiene intermediarios al realizar un cobro o pago. Puede contar con varias cuentas y tiene un funcionamiento ininterrumpido las 24 horas.
+    Hay que tener en cuenta que la moneda y la clave asociada al código criptográfico deben ser verificadas para su ejecución.</p>
+  </div>
+<hr>
+  <div class="container">
+    <h1 class="tittle">Pasos para Usarlo</h1>
+    <img src="img/paso4.jpg" class="bit">
+  </div>
+<hr>
+
+<br>
+  <div class="tittle-video">
+    <h1>Tras las Huellas del Bitcoin</h1>
+  </div>
+  <div class="div-video">
+    <iframe class="video-player" width="800" height="400" src="https://www.youtube.com/embed/ZD4iUMTHTdg" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+<hr>
+    <div class="container">
+        
+        <h1 class="tittle">Tasas de cambio de Bitcoin a Moneda Local de Diferentes Países</h1>    
+        
+      </div> 
+      <hr>
+      <div id="caja">
+        <button  class="btn btn-primary btn-outline-light btn-block" type="button" id="mostrar">Mostrar Datos</button>
+    </div>
+    <hr>
+
+      
+      <br><br>
+
+      <table class="table" id="bitcoin" style="background-color: silver">
+          <thead>
+              <tr>
+                  <th scope="col">Nombre de la Moneda</th>
+                  <th scope="col">Moneda</th>
+                  <th scope="col">Conversión a Bitcoin</th>
+                  <th scope="col">Tipo</th>
+
+              </tr>
+          </thead>
+          <tbody>
+              
+        </tbody>
+      </table>
+
+<br>
+    <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Juan Álvarez, Pablo Ortiz y Daniel Retamal @Copyrigth Derechos reservados.</p>
+    </div>
+    <div class="container" style="text-align: center;">
+      <h3 class="footer__title" >Síguenos</h3>
+      <div class="footer__social-networks">
+        <a class="a-social-networks" href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>		
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+      </div>
+  </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

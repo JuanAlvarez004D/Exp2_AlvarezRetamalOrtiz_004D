@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tech-nology</title>
+    <link href="img/icon.png" rel="shortcut icon" >
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+  
+    <!--Link hacia los iconos-->
+    <link href="https://use.fontawesome.com/5e22f11e35.css" media="all" rel="stylesheet">
+  
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-png">
+              <img src="img/icon.png" style="width: 70px; height: 55.47px;">
+            </span>
+          </button>
+    
+      <!---Icono de logo-->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icon.png" style="width:70px">
+          </a>
+    
+      <!---Opciones de navegación e iconos por sección-->    
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio<span class="sr-only">(current)</span></a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">Noticias</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="who-r-we.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeria_fotos.html">Galería de fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactenos.html">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<br><br>
+
+<!--el modal galery-->
+ 
+<div class="container">
+  <div class="con-con">
+    <div class="row">
+      <div class="col-xl-4">
+      <img id="myImg" src="img/Intel.jpeg"  alt="Procesador intel de 11ava generación, el ultimo lanzamiento de la compañia, avaluado en 1 millon de pesos" style="width:100%;max-width:300px">
+      </div>
+      <div class="col-xl-4">
+      <img id="myImg2" src="img/IA.jpg"  alt="La inteligencia Artificial se esta expandiendo de manera significativa" style="width:100%;max-width:300px"></div>
+      <div class="col-xl-4">
+      <img id="myImg3" src="img/Graficas-Nvidia-CMP-30HX-incautadas-por-aduanas-1.jpg"  alt="Incautación de tarjetas graficas, estas iban destinadas a la mineria de criptomonedas, debido a esto la falta de stock de GPUs" style="width:100%;max-width:300px">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4">
+        <img id="myImg4" src="img/granja2.jpg"  alt="Otra demostración de tarjetas graficas destinadas a la mineria de datos, con 10 de estas GPUs podria generar hasta 1200 dolares mensuales." style="width:100%;max-width:300px">
+        </div>
+        <div class="col-xl-4">
+        <img id="myImg5" src="img/setup.jpg"  alt="PC gamer personalizado" style="width:100%;max-width:300px"></div>
+        <div class="col-xl-4">
+        <img id="myImg6" src="img/setup-2.png"  alt="PC gamer. Avaluado entre 2 mil y 2500 dolares" style="width:100%;max-width:300px">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+          <img id="myImg7" src="img/lg1.jpg"  alt="F por los celulares de LG" style="width:100%;max-width:300px">
+          </div>
+          <div class="col-xl-4">
+          <img id="myImg8" src="img/Nvidia-RTX-3080-Founders-Edition.jpg"  alt="Tan bonita Tan chiquita, pero sin stock :C" style="width:100%;max-width:300px">
+          </div>
+          <div class="col-xl-4">
+          <img id="myImg9" src="img/minecraft.jpeg"  alt="Set-up de Minecraft" style="width:100%;max-width:300px">
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-4">
+            <img id="myImg10" src="img/granja.jpg"  alt="Otra granja de mineria, esta mas grande a las anteriores, el tipo se forra a fin de mes" style="width:100%;max-width:300px">
+            </div>
+            <div class="col-xl-4">
+            <img id="myImg11" src="img/granjita2.jpg"  alt="Minería de bitcoins" style="width:100%;max-width:300px">
+            </div>
+            <div class="col-xl-4">
+            <img id="myImg12" src="img/granjita.jpg"  alt="Minería de datos usando multiples tarjetas gráficas" style="width:100%;max-width:300px">
+            </div>
+            </div>
+            </div>
+
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+            <br>
+  </div>
+
+  
+ <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Juan Álvarez, Pablo Ortiz y Daniel Retamal @Copyrigth Derechos reservados.</p>
+    </div>
+    <div class="container" style="text-align: center;">
+      <h3 class="footer__title" >Síguenos</h3>
+      <div class="footer__social-networks">
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>		
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+      </div>
+  </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.galeria.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
